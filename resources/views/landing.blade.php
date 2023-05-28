@@ -32,8 +32,8 @@
     <section id="counts">
       <div class="container">
         <div class="title text-center">
-          <h1 class="mb-10">Jumlah Tempat Wisata</h1>
-          <br>
+          {{-- <h1 class="mb-10">Jumlah Tempat Wisata</h1>
+          <br> --}}
         </div>
         <div class="row d-flex justify-content-center">
 
