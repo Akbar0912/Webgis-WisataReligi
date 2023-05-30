@@ -18,6 +18,8 @@
     <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
         crossorigin="anonymous"></script>
 
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
 
     <script src="geojson/tes.geojson"></script>
 
@@ -27,16 +29,55 @@
     <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
     <style>
         #map {
             height: 600px;
         }
     </style>
 
+    {{-- style tampilan popup --}}
+    <style>
+        .custom-popup {
+            max-width: 300px;
+        }
+
+        .popup-image {
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .popup-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .popup-address {
+            margin-bottom: 5px;
+        }
+
+        .popup-buttons {
+            margin-top: 10px;
+        }
+
+        .popup-buttons button {
+            margin-right: 5px;
+        }
+
+        .popup-buttons button remove{
+            margin-top: 10px;
+        }
+    </style>
+
+
 </head>
 
 <body>
     <div id="map"></div>
+
+
 
     <script>
         // Inisialisasi peta
@@ -47,15 +88,6 @@
             attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
         }).addTo(map);
 
-        // Icon untuk marka Mosquee
-        // var mosquee = L.icon({
-        //     iconUrl: 'assets/icons/mosquee.png',
-        //     iconSize: [50, 60],
-        //     shadowSize: [50, 64],
-        //     iconAnchor: [22, 94],
-        //     shadowAnchor: [4, 62],
-        //     popupAnchor: [-3, -76]
-        // });
 
         // Icon untuk marker Bus
         var busIcon = L.icon({
@@ -90,25 +122,29 @@
 
                     // Membuat konten popup dengan informasi titik
                     var popupContent =
-                        "<img src=" + properties.Gambar + " style='max-width: 200px;'/>" +
-                        "<br><storng>Tempat:</strong> " + properties.Tempat +
-                        "<br><strong>Alamat:</strong> " + properties.Alamat +
-                        "<br><strong>Latitude:</strong> " + latitude +
-                        "<br><strong>Longitude:</strong> " + longitude +
-                        "<br><button class='btn btn-info' onclick='return keAwal(" + latitude + ", " +
+                        "<img src='" + properties.Gambar + "' class='popup-image' />" +
+                        "<div class='popup-title'>Tempat: " + properties.Tempat + "</div>" +
+                        "<div class='popup-address'><strong>Alamat:</strong> " + properties.Alamat +
+                        "</div>" +
+                        "<div><strong>Latitude:</strong> " + latitude + "</div>" +
+                        "<div><strong>Longitude:</strong> " + longitude + "</div>" +
+                        "<div class='popup-buttons'>" +
+                        "<button class='btn btn-info' onclick='return keAwal(" + latitude + ", " +
                         longitude + ")'>Start</button>" +
-                        " ||| <button class='btn btn-success' onclick='return keAkhir(" + latitude + ", " +
+                        "<button class='btn btn-success' onclick='return keAkhir(" + latitude + ", " +
                         longitude + ")'>Dest</button>" +
-                        " ||| <button class='btn btn-danger' onclick='return stopRouting(" + latitude +
-                        ", " + longitude + ")'>Remove Route</button>";
+                        "<button class='btn btn-danger remove' onclick='return stopRouting(" + latitude +
+                        ", " + longitude + ")'>Remove Route</button>" +
+                        "</div>";
 
 
                     // Mengikat konten popup ke layer
-                    layer.bindPopup(popupContent);
+                    layer.bindPopup(popupContent, {
+                        className: 'custom-popup'
+                    });
                 }
             }).addTo(map);
         });
-
 
         // L.Routing.control({
         //     waypoints: [
