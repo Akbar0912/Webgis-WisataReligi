@@ -12,6 +12,10 @@ class TitikController extends Controller
     //     $TitikModel = new TitikModel();
     // }
 
+    public function index(){
+        return view('home');
+    }
+
     public function titik()
     {
         $titikModel = new TitikModel();

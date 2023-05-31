@@ -21,7 +21,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
 
-    <script src="geojson/tes.geojson"></script>
+    {{-- <script src="geojson/tes.geojson"></script> --}}
 
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
@@ -33,7 +33,7 @@
     <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
     <style>
         #map {
-            height: 600px;
+            height: 500px;
         }
     </style>
 
@@ -66,7 +66,7 @@
             margin-right: 5px;
         }
 
-        .popup-buttons button remove{
+        .popup-buttons button remove {
             margin-top: 10px;
         }
     </style>
@@ -89,14 +89,21 @@
         }).addTo(map);
 
 
+        // A $( document ).ready() block.
+        $(document).ready(function(){
+            $.geoJSON('titik/json',function(data) {
+                alert(data);
+            });
+        });
+
         // Icon untuk marker Bus
         var busIcon = L.icon({
             iconUrl: 'assets/icons/religi-01.png',
             iconSize: [40, 45],
-            shadowSize: [50, 64],
-            iconAnchor: [22, 94],
-            shadowAnchor: [4, 62],
-            popupAnchor: [-3, -76]
+            // shadowSize: [50, 64],
+            // iconAnchor: [22, 94],
+            // shadowAnchor: [4, 62],
+            // popupAnchor: [-3, -76]
         });
 
         // Mengambil data GeoJSON dan menambahkannya ke peta
@@ -133,7 +140,8 @@
                         longitude + ")'>Start</button>" +
                         "<button class='btn btn-success' onclick='return keAkhir(" + latitude + ", " +
                         longitude + ")'>Dest</button>" +
-                        "<button class='btn btn-danger remove' onclick='return stopRouting(" + latitude +
+                        "<br><br><button class='btn btn-danger remove' onclick='return stopRouting(" +
+                        latitude +
                         ", " + longitude + ")'>Remove Route</button>" +
                         "</div>";
 

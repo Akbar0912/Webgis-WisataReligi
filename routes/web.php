@@ -22,6 +22,7 @@ Route::get('/home', function () {
     return view('home');
 });
 
+Route::get('/home',[TitikController::class,'index']);
 Route::get('/titik/json',[TitikController::class,'titik']);
 
 Route::get('/data', function () {
