@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- <link rel="shortcut icon" href="/assets/img/favicon.png" type="image/png"> -->
+        <link rel="shortcut icon" href="/assets/img/icon.png" type="image/png">
 
         <!--=============== REMIXICONS ===============-->
         <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
@@ -32,9 +32,6 @@
                         <li class="nav__item">
                             <a href="#about" class="nav__link">About</a>
                         </li>
-                        <!-- <li class="nav__item">
-                            <a href="#discover" class="nav__link">Rekomendasi</a>
-                        </li> -->
                         <li class="nav__item">
                             <a href="#paket" class="nav__link">Paket Wisata</a>
                         </li>
@@ -73,6 +70,21 @@
                         <h1 class="home__data-title">Wisata Religi <br> Provinsi <b>Jawa Timur</b></h1>
                         <a href="#about" class="button" style="border-radius: 10px;">Explore</a>
                     </div>
+<<<<<<< HEAD
+=======
+
+                    <div class="home__social">
+                        <a href="https://www.facebook.com/" target="_blank" class="home__social-link">
+                            <i class="ri-facebook-box-fill"></i>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" class="home__social-link">
+                            <i class="ri-instagram-fill"></i>
+                        </a>
+                        <a href="https://twitter.com/" target="_blank" class="home__social-link">
+                            <i class="ri-twitter-fill"></i>
+                        </a>
+                    </div>
+>>>>>>> 9f6d5b48bf3bc975b35116b265421521eadd081c
                 </div>
             </section>
 
@@ -80,7 +92,7 @@
             <section class="about section" id="about">
                 <div class="about__container container grid">
                     <div class="about__data">
-                        <h2 class="section__title about__title">About Webgis Wisata Religi</h2>
+                        <h2 class="section__title about__title">About <br> Webgis Wisata Religi</h2>
                         <p class="about__description">Sistem informasi ini merupakan aplikasi pemetaan geografis wisata religi wilayah Jawa Timur. Aplikasi ini memuat informasi dan lokasi dari tempat wisata religi di Jawa Timur.
                         </p>
                         <a href="/home" class="button" style="border-radius: 10px;">Lihat Peta</a>
@@ -88,15 +100,24 @@
 
                     <div class="about__img">
                         <div class="about__img-overlay">
+<<<<<<< HEAD
                             <img src="/assets/img/wisata1.jpg" alt="" class="about__img-one">
                         </div>
 
                         <div class="about__img-overlay">
                             <img src="/assets/img/wisata2.jpg" alt="" class="about__img-two">
+=======
+                            <img src="/assets/img/aboutwisata1.jpg" alt="" class="about__img-one">
+                        </div>
+
+                        <div class="about__img-overlay">
+                            <img src="/assets/img/aboutwisata2.jpg" alt="" class="about__img-two">
+>>>>>>> 9f6d5b48bf3bc975b35116b265421521eadd081c
                         </div>
                     </div>
                 </div>
             </section>
+<<<<<<< HEAD
 
             <!--==================== DISCOVER ====================-->
             <!-- <section class="discover section" id="discover">
@@ -176,6 +197,8 @@
                     </div>
                 </div>
             </section> -->
+=======
+>>>>>>> 9f6d5b48bf3bc975b35116b265421521eadd081c
 
             <!--==================== VIDEO ====================-->
             <section class="video section">
@@ -208,11 +231,6 @@
                         <img src="/assets/img/wisata1.jpg" alt="" class="place__img">
 
                         <div class="place__content">
-                            <span class="place__rating">
-                                <!-- <i class="ri-star-line place__rating-icon"></i>
-                                <span class="place__rating-number">4,8</span> -->
-                            </span>
-
                             <div class="place__data">
                                 <h3 class="place__title">Masjid Nasional Al Akbar</h3>
                                 <span class="place__subtitle">Surabaya</span>
@@ -231,11 +249,6 @@
                         <img src="/assets/img/wisata2.jpg" alt="" class="place__img">
 
                         <div class="place__content">
-                            <span class="place__rating">
-                                <!-- <i class="ri-star-line place__rating-icon"></i>
-                                <span class="place__rating-number">5,0</span> -->
-                            </span>
-
                             <div class="place__data">
                                 <h3 class="place__title">Masjid Agung Tuban</h3>
                                 <span class="place__subtitle">Tuban</span>
@@ -254,11 +267,6 @@
                         <img src="/assets/img/wisata3.jpg" alt="" class="place__img">
 
                         <div class="place__content">
-                            <span class="place__rating">
-                                <!-- <i class="ri-star-line place__rating-icon"></i>
-                                <span class="place__rating-number">4,9</span> -->
-                            </span>
-
                             <div class="place__data">
                                 <h3 class="place__title">Masjid Agung Jami Malang</h3>
                                 <span class="place__subtitle">Malang</span>
@@ -277,11 +285,6 @@
                         <img src="/assets/img/wisata4.jpg" alt="" class="place__img">
 
                         <div class="place__content">
-                            <span class="place__rating">
-                                <!-- <i class="ri-star-line place__rating-icon"></i>
-                                <span class="place__rating-number">4,8</span> -->
-                            </span>
-
                             <div class="place__data">
                                 <h3 class="place__title">Candi Bajang Ratu</h3>
                                 <span class="place__subtitle">Malang</span>
@@ -300,11 +303,6 @@
                         <img src="/assets/img/wisata5.jpg" alt="" class="place__img">
 
                         <div class="place__content">
-                            <span class="place__rating">
-                                <!-- <i class="ri-star-line place__rating-icon"></i>
-                                <span class="place__rating-number">4,8</span> -->
-                            </span>
-
                             <div class="place__data">
                                 <h3 class="place__title">Klenteng Kwan Sing Bio</h3>
                                 <span class="place__subtitle">Tuban</span>
@@ -323,11 +321,6 @@
                         <img src="/assets/img/wisata6.jpg" alt="" class="place__img">
 
                         <div class="place__content">
-                            <!-- <span class="place__rating"> -->
-                                <!-- <i class="ri-star-line place__rating-icon"></i>
-                                <span class="place__rating-number">4,8</span> -->
-                            <!-- </span> -->
-
                             <div class="place__data">
                                 <h3 class="place__title">Candi Penataran</h3>
                                 <span class="place__subtitle">Blitar</span>
@@ -342,6 +335,7 @@
                     </div>
                 </div>
             </section>
+<<<<<<< HEAD
 
             <!--==================== SUBSCRIBE ====================-->
             <!-- <section class="subscribe section">
@@ -384,6 +378,9 @@
                 </div>
             </section>
         </main> -->
+=======
+        </main>
+>>>>>>> 9f6d5b48bf3bc975b35116b265421521eadd081c
 
         <!--==================== FOOTER ====================-->
         <footer class="footer section">
@@ -424,6 +421,7 @@
                             </li>
                         </ul>
                     </div>
+<<<<<<< HEAD
 
                     <!-- <div class="footer__data">
                         <h3 class="footer__subtitle">Company</h3>
@@ -440,6 +438,9 @@
                         </ul>
                     </div> -->
 
+=======
+        
+>>>>>>> 9f6d5b48bf3bc975b35116b265421521eadd081c
                     <div class="footer__data">
                         <h3 class="footer__subtitle">Support</h3>
                         <ul>
