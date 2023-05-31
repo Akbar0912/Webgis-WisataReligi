@@ -20,7 +20,7 @@
     <body>
         <header class="header" id="header">
             <nav class="nav container">
-                <a href="#" class="nav__logo">WISATA RELIGI JAWA TIMUR</a>
+                <a href="#" class="nav__logo">WEBGIS</a>
 
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
@@ -30,9 +30,9 @@
                         <li class="nav__item">
                             <a href="#about" class="nav__link">About</a>
                         </li>
-                        <li class="nav__item">
+                        <!-- <li class="nav__item">
                             <a href="#discover" class="nav__link">Rekomendasi</a>
-                        </li>
+                        </li> -->
                         <li class="nav__item">
                             <a href="#paket" class="nav__link">Paket Wisata</a>
                         </li>
@@ -40,9 +40,15 @@
 
                     <div class="nav__dark">
                         <!-- Theme change button -->
-                        <!-- <span class="change-theme-name">Dark mode</span>
-                        <i class="ri-moon-line change-theme" id="theme-button"></i> -->
+                        <span class="change-theme-name">Dark mode</span>
+                        <i class="ri-moon-line change-theme" id="theme-button"></i>
                     </div>
+
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link">LOGIN ADMIN</a>
+                        </li>
+                    </ul>
 
                     <i class="ri-close-line nav__close" id="nav-close"></i>
                 </div>
@@ -60,10 +66,9 @@
 
                 <div class="home__container container grid">
                     <div class="home__data">
-                        <span class="home__data-subtitle">Discover your place</span>
-                        <h1 class="home__data-title">Explore The <br> Best <b>Beautiful <br> Beaches</b></h1>
-                        <a href="/home" class="button">Explore</a>
-
+                        <span class="home__data-subtitle">SISTEM INFORMASI GEOGRAFIS</span>
+                        <h1 class="home__data-title">Wisata Religi <br> Provinsi <b>Jawa Timur</b></h1>
+                        <a href="#about" class="button">Explore</a>
                     </div>
 
                     <div class="home__social">
@@ -78,7 +83,7 @@
                         </a>
                     </div>
 
-                    <div class="home__info">
+                    <!-- <div class="home__info">
                         <div>
                             <span class="home__info-title">5 best places to visit</span>
                             <a href="" class="button button--flex button--link home__info-button">
@@ -89,7 +94,7 @@
                         <div class="home__info-overlay">
                             <img src="/assets/img/home2.jpg" alt="" class="home__info-img">
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </section>
 
@@ -97,12 +102,10 @@
             <section class="about section" id="about">
                 <div class="about__container container grid">
                     <div class="about__data">
-                        <h2 class="section__title about__title">More Information <br> About The Best Beaches</h2>
-                        <p class="about__description">You can find the most beautiful and pleasant places at the best 
-                            prices with special discounts, you choose the place we will guide you all the way to wait, get your 
-                            place now.
+                        <h2 class="section__title about__title">About Webgis Wisata Religi</h2>
+                        <p class="about__description">Sistem informasi ini merupakan aplikasi pemetaan geografis wisata religi wilayah Jawa Timur. Aplikasi ini memuat informasi dan lokasi dari tempat wisata religi di Jawa Timur.
                         </p>
-                        <a href="#" class="button">Reserve a place</a>
+                        <a href="/home" class="button">Lihat Peta</a>
                     </div>
 
                     <div class="about__img">
@@ -118,40 +121,40 @@
             </section>
             
             <!--==================== DISCOVER ====================-->
-            <section class="discover section" id="discover">
+            <!-- <section class="discover section" id="discover">
                 <h2 class="section__title">Discover the most <br> attractive places</h2>
                 
                 <div class="discover__container container swiper-container">
-                    <div class="swiper-wrapper">
+                    <div class="swiper-wrapper"> -->
                         <!--==================== DISCOVER 1 ====================-->
-                        <div class="discover__card swiper-slide">
+                        <!-- <div class="discover__card swiper-slide">
                             <img src="/assets/img/discover1.jpg" alt="" class="discover__img">
                             <div class="discover__data">
                                 <h2 class="discover__title">Bali</h2>
                                 <span class="discover__description">24 tours available</span>
                             </div>
-                        </div>
+                        </div> -->
 
                         <!--==================== DISCOVER 2 ====================-->
-                        <div class="discover__card swiper-slide">
+                        <!-- <div class="discover__card swiper-slide">
                             <img src="/assets/img/discover2.jpg" alt="" class="discover__img">
                             <div class="discover__data">
                                 <h2 class="discover__title">Hawaii</h2>
                                 <span class="discover__description">15 tours available</span>
                             </div>
-                        </div>
+                        </div> -->
 
                         <!--==================== DISCOVER 3 ====================-->
-                        <div class="discover__card swiper-slide">
+                        <!-- <div class="discover__card swiper-slide">
                             <img src="/assets/img/discover3.jpg" alt="" class="discover__img">
                             <div class="discover__data">
                                 <h2 class="discover__title">Hvar</h2>
                                 <span class="discover__description">18 tours available</span>
                             </div>
-                        </div>
+                        </div> -->
 
                         <!--==================== DISCOVER 4 ====================-->
-                        <div class="discover__card swiper-slide">
+                        <!-- <div class="discover__card swiper-slide">
                             <img src="/assets/img/discover4.jpg" alt="" class="discover__img">
                             <div class="discover__data">
                                 <h2 class="discover__title">Whitehaven</h2>
@@ -160,10 +163,10 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> -->
 
             <!--==================== EXPERIENCE ====================-->
-            <section class="experience section">
+            <!-- <section class="experience section">
                 <h2 class="section__title">With Our Experience <br> We Will Serve You</h2>
 
                 <div class="experience__container container grid">
@@ -194,35 +197,35 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> -->
 
             <!--==================== VIDEO ====================-->
             <section class="video section">
-                <h2 class="section__title">Video Tour</h2>
+                <!-- <h2 class="section__title">Video Tour</h2>
 
                 <div class="video__container container">
                     <p class="video__description">Find out more with our video of the most beautiful and 
                         pleasant places for you and your family.
-                    </p>
+                    </p> -->
 
                     <div class="video__content">
                         <video id="video-file">
-                            <source src="/assets/video/video.mp4" type="video/mp4">
+                            <!-- <source src="/assets/video/video.mp4" type="video/mp4"> -->
                         </video>
 
-                        <button class="button button--flex video__button" id="video-button">
-                            <i class="ri-play-line video__button-icon" id="video-icon"></i>
+                        <button id="video-button">
+                            <!-- <i class="ri-play-line video__button-icon" id="video-icon"></i> -->
                         </button>
                     </div>
                 </div>
             </section>
 
-            <!--==================== PLACES ====================-->
-            <section class="place section" id="place">
+            <!--==================== PAKET ====================-->
+            <section class="place section" id="paket">
                 <h2 class="section__title">Pilih Paket Destinasi Wisatamu</h2>
 
                 <div class="place__container container grid">
-                    <!--==================== PLACES CARD 1 ====================-->
+                    <!--==================== PAKET CARD 1 ====================-->
                     <div class="place__card">
                         <img src="/assets/img/wisata1.jpg" alt="" class="place__img">
                         
@@ -235,6 +238,7 @@
                             <div class="place__data">
                                 <h3 class="place__title">Masjid Nasional Al Akbar</h3>
                                 <span class="place__subtitle">Surabaya</span>
+                                <div style="height: 150px;"></div>
                                 <span class="place__price">Rp. 500.000</span>
                             </div>
                         </div>
@@ -244,7 +248,7 @@
                         </button>
                     </div>
 
-                    <!--==================== PLACES CARD 2 ====================-->
+                    <!--==================== PAKET CARD 2 ====================-->
                     <div class="place__card">
                         <img src="/assets/img/wisata2.jpg" alt="" class="place__img">
                         
@@ -257,6 +261,7 @@
                             <div class="place__data">
                                 <h3 class="place__title">Masjid Agung Tuban</h3>
                                 <span class="place__subtitle">Tuban</span>
+                                <div style="height: 150px;"></div>
                                 <span class="place__price">Rp. 500.000</span>
                             </div>
                         </div>
@@ -266,7 +271,7 @@
                         </button>
                     </div>
 
-                    <!--==================== PLACES CARD 3 ====================-->
+                    <!--==================== PAKET CARD 3 ====================-->
                     <div class="place__card">
                         <img src="/assets/img/wisata3.jpg" alt="" class="place__img">
                         
@@ -279,6 +284,7 @@
                             <div class="place__data">
                                 <h3 class="place__title">Masjid Agung Jami Malang</h3>
                                 <span class="place__subtitle">Malang</span>
+                                <div style="height: 150px;"></div>
                                 <span class="place__price">Rp. 500.000</span>
                             </div>
                         </div>
@@ -288,7 +294,7 @@
                         </button>
                     </div>
 
-                    <!--==================== PLACES CARD 4 ====================-->
+                    <!--==================== PAKET CARD 4 ====================-->
                     <div class="place__card">
                         <img src="/assets/img/wisata4.jpg" alt="" class="place__img">
                         
@@ -301,6 +307,7 @@
                             <div class="place__data">
                                 <h3 class="place__title">Candi Bajang Ratu</h3>
                                 <span class="place__subtitle">Malang</span>
+                                <div style="height: 150px;"></div>
                                 <span class="place__price">Rp. 500.000</span>
                             </div>
                         </div>
@@ -310,7 +317,7 @@
                         </button>
                     </div>
 
-                    <!--==================== PLACES CARD 5 ====================-->
+                    <!--==================== PAKET CARD 5 ====================-->
                     <div class="place__card">
                         <img src="/assets/img/wisata5.jpg" alt="" class="place__img">
                         
@@ -323,6 +330,7 @@
                             <div class="place__data">
                                 <h3 class="place__title">Klenteng Kwan Sing Bio</h3>
                                 <span class="place__subtitle">Tuban</span>
+                                <div style="height: 150px;"></div>
                                 <span class="place__price">Rp. 500.000</span>
                             </div>
                         </div>
@@ -332,19 +340,20 @@
                         </button>
                     </div>
 
-                    <!--==================== PLACES CARD 6 ====================-->
+                    <!--==================== PAKET CARD 6 ====================-->
                     <div class="place__card">
                         <img src="/assets/img/wisata6.jpg" alt="" class="place__img">
                         
                         <div class="place__content">
-                            <span class="place__rating">
+                            <!-- <span class="place__rating"> -->
                                 <!-- <i class="ri-star-line place__rating-icon"></i>
                                 <span class="place__rating-number">4,8</span> -->
-                            </span>
+                            <!-- </span> -->
 
                             <div class="place__data">
                                 <h3 class="place__title">Candi Penataran</h3>
                                 <span class="place__subtitle">Blitar</span>
+                                <div style="height: 150px;"></div>
                                 <span class="place__price">Rp. 500.000</span>
                             </div>
                         </div>
@@ -357,7 +366,7 @@
             </section>
 
             <!--==================== SUBSCRIBE ====================-->
-            <section class="subscribe section">
+            <!-- <section class="subscribe section">
                 <div class="subscribe__bg">
                     <div class="subscribe__container container">
                         <h2 class="section__title subscribe__title">Subscribe Our <br> Newsletter</h2>
@@ -374,10 +383,10 @@
                         </form>
                     </div>
                 </div>
-            </section>
+            </section> -->
             
             <!--==================== SPONSORS ====================-->
-            <section class="sponsor section">
+            <!-- <section class="sponsor section">
                 <div class="sponsor__container container grid">
                     <div class="sponsor__content">
                         <img src="/assets/img/sponsors1.png" alt="" class="sponsor__img">
@@ -396,7 +405,7 @@
                     </div>
                 </div>
             </section>
-        </main>
+        </main> -->
 
         <!--==================== FOOTER ====================-->
         <footer class="footer section">
@@ -438,7 +447,7 @@
                         </ul>
                     </div>
     
-                    <div class="footer__data">
+                    <!-- <div class="footer__data">
                         <h3 class="footer__subtitle">Company</h3>
                         <ul>
                             <li class="footer__item">
@@ -448,29 +457,29 @@
                                 <a href="" class="footer__link">Plan y Pricing</a>
                             </li>
                             <li class="footer__item">
-                                <a href="" class="footer__link">Become a member</a>
+                                <a href="#" class="footer__link">Become a member</a>
                             </li>
                         </ul>
-                    </div>
+                    </div> -->
     
                     <div class="footer__data">
                         <h3 class="footer__subtitle">Support</h3>
                         <ul>
                             <li class="footer__item">
-                                <a href="" class="footer__link">FAQs</a>
+                                <a href="#" class="footer__link">FAQs</a>
                             </li>
                             <li class="footer__item">
-                                <a href="" class="footer__link">Support Center</a>
+                                <a href="#" class="footer__link">Support Center</a>
                             </li>
                             <li class="footer__item">
-                                <a href="" class="footer__link">Contact Us</a>
+                                <a href="#" class="footer__link">Contact Us</a>
                             </li>
                         </ul>
                     </div>
                 </div>
 
                 <div class="footer__rights">
-                    <p class="footer__copy">&#169; 2021 Bedimcode. All rigths reserved.</p>
+                    <!-- <p class="footer__copy">&#169; 2021 Bedimcode. All rigths reserved.</p> -->
                     <div class="footer__terms">
                         <a href="#" class="footer__terms-link">Terms & Agreements</a>
                         <a href="#" class="footer__terms-link">Privacy Policy</a>

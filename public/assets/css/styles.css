@@ -301,6 +301,7 @@ input {
   height: 100vh;
   object-fit: cover;
   object-position: 83%;
+  filter: brightness(30%);
 }
 
 .home__container {
@@ -589,6 +590,7 @@ input {
 
 .place__img {
   transition: var(--img-transition);
+  filter: brightness(60%);
 }
 
 .place__content, .place__title {
@@ -624,6 +626,11 @@ input {
 
 .place__subtitle, .place__price {
   display: block;
+}
+
+.place__price {
+  position: relative;
+  bottom: 10;
 }
 
 .place__title {
